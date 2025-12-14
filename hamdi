@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KHM - Boutique de vêtements</title>
+  <meta name="description" content="KHM - Boutique de vêtements. Maillots, contact WhatsApp 77079769, adresse N°29 BALBALA,LAYABLEH ."/>
+  <style>
+    /* ----------------- Reset / Base ----------------- */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height:100%; font-family: "Segoe UI", Roboto, Arial, sans-serif; background:#f6f7f9; color:#111; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width:100%; display:block; }
+
+    /* ----------------- Layout ----------------- */
+    header { background:#fff; padding:18px 20px; border-bottom:1px solid #e6e9ee; display:flex; align-items:center; gap:16px; }
+    .logo { width:64px; height:64px; border-radius:12px; overflow:hidden; background:#eee; display:flex; align-items:center; justify-content:center; }
+    .brand { font-size:20px; font-weight:700; }
+    nav { margin-left:auto; display:flex; gap:18px; align-items:center; }
+    nav a { color:#333; font-weight:600; }
+
+    main { max-width:1100px; margin:28px auto; padding:0 18px; }
+
+    .top { display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
+    .left, .right { background:#fff; border-radius:10px; padding:18px; box-shadow:0 6px 18px rgba(15,20,30,0.06); }
+    .left { flex:1 1 360px; min-width:320px; }
+    .right { width:420px; flex:0 0 420px; }
+
+    /* ----------------- Business info ----------------- */
+    .info h1 { font-size:28px; margin-bottom:6px; }
+    .info p.meta { color:#555; margin-bottom:14px; }
+    .contact-list { list-style:none; margin-top:8px; display:grid; gap:10px; }
+    .contact-item { display:flex; gap:12px; align-items:center; color:#333; }
+    .icon { width:36px; height:36px; border-radius:8px; background:#f0f3f6; display:flex; align-items:center; justify-content:center; font-weight:700; color:#333; }
+
+    /* ----------------- Product ----------------- */
+    .product { display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap; }
+    .product .img { width:260px; border-radius:8px; overflow:hidden; background:#fafafa; padding:8px; }
+    .product .meta { flex:1; min-width:240px; }
+    .product h2 { font-size:22px; margin-bottom:6px; }
+    .price { font-size:20px; font-weight:700; margin-bottom:10px; color:#0a0a0a; }
+    .sizes { margin:8px 0 14px; }
+    select { padding:10px; border-radius:8px; border:1px solid #ddd; background:white; font-size:15px; }
+
+    .btn-whatsapp {
+      display:inline-block;
+      margin-top:6px;
+      background:#25D366;
+      color:#fff; red
+      padding:12px 18px;
+      border-radius:10px;
+      font-weight:700;
+    }
+
+    /* ----------------- Map / footer ----------------- */
+    .map { margin-top:18px; height:250px; border-radius:10px; overflow:hidden; border:1px solid #e6e9ee; }
+    footer { text-align:center; padding:18px 8px; color:#666; margin-top:26px; font-size:14px; }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .right { flex-basis:100%; width:auto; }
+      .top { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo" title="Logo KHM">
+      <!-- Remplace logo.png par ton logo -->
+      <img src="KHM Shield Logo Design.png" alt="Logo KHM" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div>
+      <div class="brand">KHM</div>
+      <div style="color:#666; font-size:13px;">Boutique de vêtements</div>
+    </div>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section id="accueil" class="top">
+      <!-- Left: business + product -->
+      <div class="left">
+        <div class="info">
+          <h1>KHM - Boutique de vêtements</h1>
+          <p class="meta">Maillots de qualité </p>
+
+          <ul class="contact-list">
+            <li class="contact-item"><span class="icon">📍</span>
+              <div>
+                <strong>Adresse</strong><br>
+                N°29, BALBALA, LAYABLEH
+              </div>
+            </li>
+
+            <li class="contact-item"><span class="icon">📞</span>
+              <div>
+                <strong>Téléphone</strong><br>
+                +253 770 79 769 77430639 
+              </div>
+            </li>
+
+            <li class="contact-item"><span class="icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong><br>
+                <a href="https://wa.me/25377079769" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+              </div>
+            </li>
+
+            <li class="contact-item"><span class="icon">🔗</span>
+              <div>
+                <strong>Site</strong><br>
+                <a href="https://www.khm.com" target="_blank" rel="noopener">www.khm.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- À propos -->
+        <div style="margin-top:16px;">
+          <h3>À propos</h3>
+          <p style="color:#555; margin-top:8px;">
+            KHM propose une sélection de maillots et vêtements adaptés à tous. Commandez facilement via WhatsApp ou passez nous voir en boutique.
+          </p>
+        </div>
+
+        <!-- Map -->
+        <div id="contact" style="margin-top:14px;">
+          <h3 style="margin-bottom:8px;">Localisation</h3>
+          <!-- Google Maps search embed (remplace la query si nécessaire) -->
+          <div class="map">
+            <iframe
+              width="100%" height="100%" frameborder="0" style="border:0"
+              src="https://www.google.com/maps/search/?api=1&query=N%C2%B029+Andinangombe+Moroni"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: produit -->
+      <aside class="right" id="boutique">
+        <div class="product">
+          <div class="img">
+            <!-- Remplace maillot.jpg par ta photo produit -->
+            <img src="maillot.jpg Desktop new folder th" alt="Maillot KHM ">
+          </div>
+          <div class="meta">
+            <h2>Maillot (modèle unique)</h2>
+            <div class="price">2000fr</div>
+            <div class="sizes">
+              <label for="size">Taille</label><br>
+              <select id="size" name="size">
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>  
+              <option value="XL">XL</option>
+              <option value="XL2">XL2</option>
+              </select>
+
+            </div>
+
+            <!-- WhatsApp order link with prefilled message.
+                 - Le numéro utilisé est +25377079769.
+                 - Le message inclut la taille sélectionnée via JS (voir script en bas). -->
+            <div>
+              <a id="whatsappBtn" class="btn-whatsapp" target="_blank" rel="noopener"
+                 href="https://wa.me/25377079769?text=Bonjour%20je%20souhaite%20commander%20le%20maillot%20-%20taille%20%3A%20M">
+                Commander via WhatsApp (77079769)
+              </a>
+            </div>
+
+            <p style="margin-top:12px; color:#666; font-size:14px;">
+              Message automatique : "Bonjour je souhaite commander le maillot - taille : [indiquez la taille]".
+            </p>
+          </div>
+        </div>
+
+        <!-- Optionnel: galerie / autres infos -->
+        <div style="margin-top:18px; font-size:14px; color:#555;">
+          <strong>Paiement</strong><br>
+          Paiement en liquide à la livraison ou en boutique. (Modifier selon vos options)
+        </div>
+      </aside>
+    </section>
+
+    <!-- À propos détaillé -->
+    <section id="apropos" style="margin-top:20px;">
+      <div style="background:#fff; border-radius:10px; padding:16px; box-shadow:0 6px 18px rgba(15,20,30,0.04);">
+        <h3>Notre engagement</h3>
+        <p style="color:#555; margin-top:8px;">
+          Chez KHM, la qualité et le service client sont nos priorités. Pour toute demande spéciale (taille, livraison), contactez-nous directement via WhatsApp.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> KHM — Boutique de vêtements • Téléphone : +253 770 79 769
+  </footer>
+
+  <script>
+    // Affiche l'année courante
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Met à jour le lien WhatsApp avec la taille choisie
+    (function(){
+      const btn = document.getElementById('whatsappBtn');
+      const sizeSelect = document.getElementById('size');
+
+      function updateWhatsAppLink(){
+        const size = encodeURIComponent(sizeSelect.value);
+        const base = 'https://wa.me/25377079769';
+        const text = encodeURIComponent('Bonjour je souhaite commander le maillot - taille : ' + size);
+        btn.href = base + '?text=' + text;
+      }
+
+      sizeSelect.addEventListener('change', updateWhatsAppLink);
+      // initial
+      updateWhatsAppLink();
+    })();
+  </script>
+
+ 
+</style>
+
+
+</body>
+</html>
+
+  {
+
+</style>
+
+</style>
+<style>
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Couleurs principales */
+:root {
+  --primary: #e63946; /* rouge */
+  --secondary: #f1f1f1; /* fond clair */
+  --text: #333;
+  --text-light: #fff;
+  --card-bg: #fff;
+  --radius: 12px;
+}
+
+/* Body et général */
+body {
+  background-color: var(--secondary);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: var(--text-light);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffb3b3;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--primary);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Produits */
+.product {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  display: inline-block;
+  margin: 15px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff6b6b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product {
+    width: 80%;
+  }
+
+  header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+</style>
+<p style="color: red; font-size: 20px;">Bonjour, je suis en rouge et grand !</p>
